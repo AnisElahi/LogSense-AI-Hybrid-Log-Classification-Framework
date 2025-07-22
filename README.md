@@ -46,3 +46,48 @@ It combines:
 Ensure Python is installed, then run:
 ```bash
 pip install -r requirements.txt
+````
+
+### 2. Run the FastAPI Server
+
+Start the API server using:
+
+```bash
+uvicorn server:app --reload
+```
+
+API Access Points:
+
+* Main API: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+* Swagger Docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+* ReDoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
+---
+
+## 📤 Usage Guide
+
+1. Upload a CSV file to the API containing logs with two columns:
+
+   * `source`
+   * `log_message`
+
+2. The system will return a new CSV file containing:
+
+   * `target_label` → the predicted category for each log message.
+
+---
+
+## 📛 Disclaimer
+
+**Copyright ©**
+
+* Codebasics Inc
+* LearnerX Pvt Ltd
+
+> This project is intended **only for educational purposes**. Commercial use without permission is prohibited.
+
+
+
+
+
+
